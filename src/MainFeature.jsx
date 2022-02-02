@@ -79,10 +79,10 @@ const MainFeature = () => {
         </h1>
 
         <div className='row'>
-          <div className="col ">
+          <div className="col-12 col-sm-6">
             <Input ref={schemaRef} name='Schema' onChange={onElementChangeHandle}/>
           </div>
-          <div className="col">
+          <div className="col-12 col-sm-6">
               <Input ref={routeRef} name='Route' onChange={onElementChangeHandle} />
             </div>
           </div>
@@ -93,7 +93,7 @@ const MainFeature = () => {
             </div>
           </div>
           <div  className="row justify-content-center">
-            <Button className='w-25 w-sm-100' type="submit">Submit Link</Button>
+            <Button className='w-25' style={{minWidth:150}} type="submit">Submit Link</Button>
           </div>
         </Form>
         <Card className="mt-3" >
